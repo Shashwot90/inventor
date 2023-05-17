@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .category {
+            display: flex;
+           
+        }
+        .form-popup-product {
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+
+    
+  
+
+        <div class="category">
+           
+            
+            <!-- Add Category Form -->
+            <div class="form-popup-product" id="myForm">
+              <form action="" class="form-container-product">
+                <h1>Add Order</h1>
+      
+                 
+                <div class="theme-toggler theme-product">
+                  <span class="material-icons-sharp active">light_mode</span>
+                  <span class="material-icons-sharp">dark_mode</span>
+                </div>
+             
+      
+      
+      
+                <label for="text"><b>Client Name</b></label>
+                <input type="text" placeholder="Enter Client Name" name="name" required>
+      
+                <label for="text"><b>Client Address</b></label>
+                <input type="text" placeholder="Enter Client Address" name="address" required>
+            
+                <label for="status"><b>Phone</b></label>
+                <input type="text"  placeholder="Enter Client Phone" name="phone" required>
+                <!-- <input type="password" placeholder="Enter Password" name="status" required> -->
+            
+      
+                <div class="recent-orders">
+                <table id="category_data">
+                  <thead>
+                    <tr>
+                      
+                      <th>Product</th>
+                      <th>Qty</th>
+                      <th>Rate</th>
+                      <th>Amount</th>
+                      <th ><button class="order-btn"><span class="material-icons-sharp">add</span></button></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    
+                    <tr class="height1">
+                     
+                      
+                      <td><input type="text"  placeholder="Enter Client Phone" name="product" required></td>
+                      <td><input type="text"  placeholder="Enter Client Phone" name="qty" required></td>
+                      <td><input type="text"  placeholder="Enter Client Phone" name="rate" required></td>
+                      <td><input type="text"  placeholder="Enter Client Phone" name="amount" required></td>
+                       
+                      <td >
+                        <button class="order-btn"><span class="material-icons-sharp">delete</span></button>
+                      </td>
+                      
+                      
+                    </tr>
+      
+                    <tr class="height1">
+                     
+                      
+                      <td><input type="text"  placeholder="Enter Client Phone" name="product" required></td>
+                      <td><input type="text"  placeholder="Enter Client Phone" name="qty" required></td>
+                      <td><input type="text"  placeholder="Enter Client Phone" name="rate" required></td>
+                      <td><input type="text"  placeholder="Enter Client Phone" name="amount" required></td>
+                       
+                      <td >
+                        <button class="order-btn"><span class="material-icons-sharp">delete</span></button>
+                      </td>
+                      
+                      
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </div>
+      
+      
+      
+                <label for="text"><b>Gross Amount</b></label>
+                <input type="text" placeholder="Enter Quantity" name="gamount" required>
+      
+                <label for="text"><b>S Charge 13%</b></label>
+                <input type="text" placeholder="Enter Category Name" name="charge" required>
+      
+                <label for="text"><b>Vat 10%</b></label>
+                <input type="text" placeholder="Enter Vat" name="vat" required>
+      
+                <label for="text"><b>Discount</b></label>
+                <input type="text" placeholder="Enter Discount" name="discount" required>
+      
+                <label for="text"><b>Net Amount</b></label>
+                <input type="text" placeholder="Enter Net Amount" name="namount" required>
+      
+      
+      
+                <button type="submit" class="btn">Save Changes</button>
+                <button class="close" id="close-btn" onclick="closeForm()">
+                  <span class="material-icons-sharp">close</span>
+                </button>
+      
+                <!-- <button type="button" class="btn cancel" onclick="closeForm()"><span class="material-icons-sharp">edit</span></button> -->
+              </form>
+            </div>
+    
+    
+      
+</body>
+</html>
